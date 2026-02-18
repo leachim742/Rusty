@@ -1,0 +1,8 @@
+.bg-black { background-color: #1a4d80 !important; }
+.bg-near-black { background-color: #113355 !important; }
+.near-black { color: #0d2640 !important; }
+a { color: #1a73e8; }
+a:hover { color: #135abe; }
+.pa3-l { padding: 2rem; }
+header { background-color: #1a4d80 !important; }
+footer { background-color: #113355 !important; }
