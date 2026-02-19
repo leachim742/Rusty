@@ -1,0 +1,7 @@
+{{ $options := dict "inlineImports" true }}
+{{ $styles := resources.Get "css/tailwind.css" }}
+{{ $styles = $styles | css.PostCSS $options }}
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | minify | fingerprint }}
+{{ end }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
